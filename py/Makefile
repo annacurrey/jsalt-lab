@@ -6,13 +6,14 @@ FEAT=$(DATA)/features
 FEAT_TAT=$(DATA)/features/tat
 FEAT_DSL=$(DATA)/features/dsl
 OUT=output
-TEAM=UPDATE_TEAM_IN_MAKEFILE
+TEAM=anna-mingxing-theo
 
 all:
 	echo "Use one of the commands."
 	
 setup:
 	pip install --user mmh3
+	pip install -- user future
 
 	mkdir -p $(DATA)
 	mkdir -p $(OUT)
