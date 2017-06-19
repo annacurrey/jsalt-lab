@@ -8,28 +8,33 @@ Baseline is the version as given to us.
 
 
 ## Baseline
-|       | dev   | train |
-|-------|-------|-------|
-| dsl   | 0.90  | 0.94  |
-| tat   |       |       |
+|       | dev   | train | time	|
+|-------|-------|-------|-------|
+| dsl   | 0.90  | 0.94  | 3m1s	|	
+| tat   |       |       |	
 
 ## Feature engineering
 dsl only..
-|       | dev   | train |
-|-------|-------|-------|
-| TODO  | 0.90  | 0.94  |
-| TODO  |       |       |
+|       	| dev   | train | time	|
+|---------------|-------|-------|-------|
+| +lower	| 0.90  | 0.94  |	
+| +split punct	|       |       |	
 
 ## Regularization
-|       | dev   | train |
-|-------|-------|-------|
-| TODO  |       |       |
-| TODO  |       |       |
+|       | dev   | train | time	|
+|-------|-------|-------|-------|
+| TODO  |       |       |	|
+| TODO  |       |       |	|
 
 ## Optimization
-|       | dev   | train |
-|-------|-------|-------|
-| TODO  |       |       |
-| TODO  |       |       |
+|       | dev   | train | time	|
+|-------|-------|-------|-------|
+| TODO  |       |       |	
+| TODO  |       |       |	
 
 ## Training params?
+|       	| dev   | train | time  |
+|-------	|-------|-------|-------|
+| 10 epochs	| 0.93  | 1.00      |
+| TODO  	|       |       |
+

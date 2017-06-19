@@ -13,7 +13,7 @@ all:
 	
 setup:
 	pip install --user mmh3
-	pip install -- user future
+	pip install --user future
 
 	mkdir -p $(DATA)
 	mkdir -p $(OUT)
@@ -41,7 +41,8 @@ dslc:
 			--test $(FEAT_DSL)/test-blind.txt \
 			--test_out $(OUT)/test-dsl.txt \
 			--labels $(FEAT_DSL)/labels.txt \
-			--dev_iters 50000
+			--dev_iters 50000 \
+			--num_epochs 10
 
 dslcfast:
 	python classify.py \

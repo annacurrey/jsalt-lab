@@ -8,6 +8,7 @@ standard_library.install_aliases()
 from builtins import str
 from builtins import range
 from builtins import *
+import re
 
 import argparse
 
@@ -28,7 +29,11 @@ def main(args):
                         f_out.write(' ')
                 else:
                     # Treat each word as a feature.
-                    words = sent.split(' ')
+                    words_pre = sent.split(' ')
+                    words = []
+                    # update 2: separate punctuation
+                    for word in words_pre:
+                        words += re.findall(r"[\w']+|[.,!?;]", word)
                     for word in words:
                         # update 1: ignore case
                         f_out.write(word.lower())
